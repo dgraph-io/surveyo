@@ -166,7 +166,7 @@ function DashboardHelper() {
                 <Button type="link" icon={<DeleteOutlined />} />
               </Popconfirm>
             </Tooltip>
-            <Tooltip title="Close Survey">
+            <Tooltip title={record.isClosed ? 'Click to Open Survey': 'Click to Close Survey'}>
               <Switch
                 size="small"
                 checked={record.isClosed}
